@@ -17,6 +17,7 @@ public class Medium {
 
         /*
             GROUPED LIST OF STRING BY WORD LENGTH
+            Task: Group words by their length → Map<Integer, List<String>>
 
             INPUT: List of Strings
             INTERMEDIATE OPERATION: NONE
@@ -40,10 +41,11 @@ public class Medium {
 
         /*
             FLATTEN LIST OF LISTS
+            Task: Flatten all inner lists → filter numbers divisible by 5 → collect
 
             INPUT: List of list of integers
-            INTERMEDIATE OPERATION: flatmap(Collection::stream)
-                                    filter(a -> a%5 == 0)
+            INTERMEDIATE OPERATION: flatmap(Collection::stream) -> simplify complex structure
+                                    filter(a -> a%5 == 0) -> filter numbers divisible by 5
                                     sorter() → for organizing data
             TERMINAL OPERATION: toList()
             OUTPUT: List of all numbers divisible by 5
@@ -68,8 +70,10 @@ public class Medium {
         System.out.println();
 
         System.out.println("Problem: Partition person by adults and minors");
+
         /*
             PARTITION ADULTS AND MINORS
+            Task: Partition into adults (age ≥18) and minors → Map<Boolean, List<Person>>
 
             INPUT: List of instantiated person objects
             INTERMEDIATE OPERATION: NONE
@@ -95,5 +99,6 @@ public class Medium {
 
         System.out.println("Output - ADULTS: " + adults);
         System.out.println("Output - MINORS: " + minors);
+        System.out.println();
     }
 }

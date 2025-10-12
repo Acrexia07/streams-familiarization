@@ -14,6 +14,7 @@ public class Easy {
 
         /*
             SUM OF EVEN NUMBER
+            Task: Filter even numbers → sum them
 
             INPUT: LIST OF INTEGERS
             INTERMEDIATE OPERATION: FILTER (EVEN NUMBER: n%2 == 0)
@@ -37,6 +38,7 @@ public class Easy {
 
         /*
             UNIQUE NAMES
+            Task: Remove duplicates → collect as a list
 
             INPUT: LIST OF NAMES
             INTERMEDIATE OPERATION: DISTINCT
@@ -62,6 +64,7 @@ public class Easy {
 
         /*
             TOP 3 LARGEST NUMBERS
+            Task: Sort descending → pick first 3 numbers → collect
 
             INPUT: LIST OF INTEGERS
             INTERMEDIATE OPERATION: sorted(Comparator.reverseOrder()) → to get the descending order
