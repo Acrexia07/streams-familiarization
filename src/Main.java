@@ -8,8 +8,11 @@ public class Main {
         System.out.println("Let's practice Streams!\n");
 
         System.out.println("*---------- October 12, 2025 ----------*");
-        Easy1.streamsEasy();
-        Medium1.streamsMedium();
+//        Easy1.streamsEasy();
+//        Medium1.streamsMedium();
         Hard1.streamsHard();
+//
+//        System.out.println("*---------- October 13, 2025 ----------*");
+
     }
 }
