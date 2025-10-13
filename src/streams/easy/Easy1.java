@@ -1,15 +1,13 @@
-package streams;
+package streams.easy;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Easy {
+public class Easy1 {
 
     public static void streamsEasy() {
         System.out.println("*--- Streams for Easy category ---*");
-
-        System.out.println("OCTOBER 12, 2025");
         System.out.println("Problem: Get the sum of even numbers");
 
         /*

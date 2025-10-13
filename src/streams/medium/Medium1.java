@@ -1,4 +1,4 @@
-package streams;
+package streams.medium;
 
 import model.Person;
 
@@ -8,11 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Medium {
+public class Medium1 {
 
     public static void streamsMedium() {
         System.out.println("*--- Streams for Medium category ---*");
-
         System.out.println("Problem: Group list of strings by word length");
 
         /*

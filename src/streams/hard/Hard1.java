@@ -1,13 +1,12 @@
-package streams;
+package streams.hard;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class Hard {
+public class Hard1 {
 
     public static void streamsHard() {
         System.out.println("*--- Streams for Hard category ---*");
-
         System.out.println("Problem: Parallel processing large dataset");
 
         /*
