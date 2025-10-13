@@ -1,5 +1,8 @@
 package streams.easy;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Easy2 {
 
     public static void streamsEasy() {
@@ -14,23 +17,24 @@ public class Easy2 {
                 Output: ["JAVA", "STREAM", "API"]
 
             INPUT: List of Strings
-            INTERMEDIATE OPERATION: map()
+            INTERMEDIATE OPERATION: map(String::toUpperCase)
             TERMINAL OPERATION: toList()
             OUTPUT: Uppercased strings
          */
 
         // Input
-
-        System.out.println("Input - List of raw data: " );
+        List<String> wordList = Arrays.asList("java", "stream", "api");
+        System.out.println("Input - List of raw data: " + wordList);
 
         // Process
-
-
+        List<String> capitalizedWords = wordList.stream()
+                                                .map(String::toUpperCase)
+                                                .toList();
         // Output
-        System.out.println("Output: " );
+        System.out.println("Output: " + capitalizedWords);
         System.out.println();
 
-        System.out.println("Problem: Count Strings Starting with a Letter");
+        System.out.println("Problem: Count Strings Starting with 'A' Letter");
         /*
             COUNT STRING STARTING WITH A LETTER
             Task: Count how many strings in a list start with the letter "A".
@@ -38,21 +42,22 @@ public class Easy2 {
                 Input: ["Apple", "Banana", "Avocado", "Apricot", "Berry"]
                 Output: 3
 
-            INPUT:
-            INTERMEDIATE OPERATION:
-            TERMINAL OPERATION:
+            INPUT: List of fruits
+            INTERMEDIATE OPERATION: filter() → accepts only word that starts with A
+            TERMINAL OPERATION: count() → get total string count
             OUTPUT:
          */
 
         // Input
-
-        System.out.println("Input - List of raw data: " );
+        List<String> fruitList = Arrays.asList("Apple", "Banana", "Avocado", "Apricot", "Berry");
+        System.out.println("Input - List of raw data: " + fruitList);
 
         // Process
-
-
+        int aWordCount = Math.toIntExact(fruitList.stream()
+                                                  .filter(word -> word.startsWith("A"))
+                                                  .count());
         // Output
-        System.out.println("Output: " );
+        System.out.println("Output: " + aWordCount);
         System.out.println();
 
         System.out.println("Problem: Find Average of Numbers");
@@ -63,21 +68,26 @@ public class Easy2 {
                 Input: [10, 20, 30, 40]
                 Output: 25.0
 
-            INPUT:
-            INTERMEDIATE OPERATION:
+            INPUT: List of numbers
+            INTERMEDIATE OPERATION: mapToInt() → casting int values to prepare getting a total average
+                                    average() → to compute average of the int values
+                                    orElse() → to handle empty list
             TERMINAL OPERATION:
             OUTPUT:
          */
 
         // Input
-
-        System.out.println("Input - List of raw data: " );
+        List<Integer> numbers = Arrays.asList(10, 20, 30, 40);
+        System.out.println("Input - List of raw data: " + numbers);
 
         // Process
-
+        double average = numbers.stream()
+                                .mapToInt(Integer::intValue)
+                                .average()
+                                .orElse(0);
 
         // Output
-        System.out.println("Output: " );
+        System.out.println("Output: " + average);
         System.out.println();
     }
 }

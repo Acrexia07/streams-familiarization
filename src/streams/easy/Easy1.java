@@ -19,7 +19,6 @@ public class Easy1 {
                                     REDUCE (SUM EACH NUMBER: 0, (a,b) -> a + b)
             TERMINAL OPERATION: toList()
             OUTPUT: Single value of integer
-
          */
 
         // Input
