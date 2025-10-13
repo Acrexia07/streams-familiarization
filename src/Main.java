@@ -13,7 +13,8 @@ public class Main {
 //        Hard1.streamsHard();
 //
         System.out.println("*---------- October 13, 2025 ----------*");
-        Easy2.streamsEasy();
+//        Easy2.streamsEasy();
+        Hard2.streamsHard();
 
 
     }

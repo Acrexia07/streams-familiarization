@@ -45,7 +45,7 @@ public class Easy2 {
             INPUT: List of fruits
             INTERMEDIATE OPERATION: filter() → accepts only word that starts with A
             TERMINAL OPERATION: count() → get total string count
-            OUTPUT:
+            OUTPUT: Total count for words that starts with 'A'
          */
 
         // Input
@@ -73,7 +73,7 @@ public class Easy2 {
                                     average() → to compute average of the int values
                                     orElse() → to handle empty list
             TERMINAL OPERATION:
-            OUTPUT:
+            OUTPUT: total average
          */
 
         // Input
