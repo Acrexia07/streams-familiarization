@@ -17,32 +17,41 @@ public class StreamsSolution {
                 Terminal Operator: toList()
             Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
          */
+        System.out.println("PROBLEM: Create a stream from a list of integers and print each element.");
         // Input:
         List<Integer> integerList = Arrays.asList(1,2,3,4,5,6,7,8,9,0);
+        System.out.println("Input: " + integerList);
 
         // Process:
         List<Integer> output = integerList.stream()
                                           .toList();
 
         // Output:
-        System.out.println("Output of Integers: " + output);
+        System.out.println("Output: " + output);
+        System.out.println();
 
         /*
             2. Given a list of strings, convert all of them to uppercase using streams.
 
-            Input: List of
-            Process:
+            Input: List of string
+            Process: map(String::toUpperCase()) → transform data to all uppercase
                 Intermediate Operator:
-                Terminal Operator:
+                Terminal Operator: toList()
             Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
          */
-
+        System.out.println("PROBLEM:  Given a list of strings, convert all of them to uppercase using streams.");
         // Input:
+        List<String> wordList = Arrays.asList("madam", "toy", "plane", "book", "pen", "sky");
+        System.out.println("Input: " + wordList);
 
         // Process:
+        List<String> uppercaseStringList = wordList.stream()
+                                                   .map(String::toUpperCase)
+                                                   .toList();
 
         // Output:
-
+        System.out.println("Output: " + uppercaseStringList);
+        System.out.println();
         /*
 
 
