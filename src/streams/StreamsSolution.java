@@ -1,7 +1,6 @@
 package streams;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 public class StreamsSolution {
@@ -39,7 +38,7 @@ public class StreamsSolution {
                 Terminal Operator: toList()
             Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
          */
-        System.out.println("PROBLEM:  Given a list of strings, convert all of them to uppercase using streams.");
+        System.out.println("PROBLEM: Given a list of strings, convert all of them to uppercase using streams.");
         // Input:
         List<String> wordList = Arrays.asList("madam", "toy", "plane", "book", "pen", "sky");
         System.out.println("Input: " + wordList);
@@ -53,37 +52,49 @@ public class StreamsSolution {
         System.out.println("Output: " + uppercaseStringList);
         System.out.println();
         /*
+            Convert a list of integers to their squares using map.
 
-
-            Input: List of
+            Input: List of Integers = {1,2,3,4,5,6,7,8,9,0}
             Process:
-                Intermediate Operator:
-                Terminal Operator:
-            Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
+                Intermediate Operator: map(n -> n * n) → transform into squared numbers
+                Terminal Operator: toList()
+            Output: Integer List = {1,4,9,16,26,36,49,64,81,0}
          */
-
+        System.out.println("PROBLEM: Convert a list of integers to their squares using map.");
         // Input:
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,0);
+        System.out.println("Input: " + numbers);
 
         // Process:
+        List<Integer> squaredList = numbers.stream()
+                                           .map(n -> n * n)
+                                           .toList();
 
         // Output:
-
+        System.out.println("Output: " + squaredList);
+        System.out.println();
         /*
+            From a list of strings, get the length of each string as a list of integers.
 
-
-            Input: List of
+            Input: List of Strings = {"cat", "lion", "parrot"}
             Process:
-                Intermediate Operator:
-                Terminal Operator:
-            Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
+                Intermediate Operator: map(String::length) → transform into the word length (Integers)
+                Terminal Operator: toList()
+            Output: Integer List = {3,4,6}
          */
-
+        System.out.println("PROBLEM: From a list of strings, get the length of each string as a list of integers.");
         // Input:
+        List<String> randomWords = Arrays.asList("cat", "lion", "parrot");
+        System.out.println("Input: " + randomWords);
 
         // Process:
+        List<Integer> wordLengthList = randomWords.stream()
+                                                  .map(String::length)
+                                                  .toList();
 
         // Output:
-
+        System.out.println("Output: " + wordLengthList);
+        System.out.println();
         /*
 
 

@@ -2,10 +2,10 @@
 
 ---
 ### 🔹 Basic Stream Creation & Mapping
-1. Create a stream from a list of integers and print each element. **Done: 10/17/2025**
-2. Given a list of strings, convert all of them to uppercase using streams.
-3. Convert a list of integers to their squares using map.
-4. From a list of strings, get the length of each string as a list of integers.
+1. Create a stream from a list of integers and print each element. ------ _**Done: 10/17/2025**_
+2. Given a list of strings, convert all of them to uppercase using streams. ------ _**Done: 10/17/2025**_
+3. Convert a list of integers to their squares using map. ------ _**Done: 10/18/2025**_
+4. From a list of strings, get the length of each string as a list of integers. ------ _**Done: 10/18/2025**_
 5. Given an array of integers, create a stream and print only the even numbers.
 6. Generate the first 10 natural numbers using Stream.iterate() and print them.
 7. Create a stream from a list of names and sort them alphabetically.
