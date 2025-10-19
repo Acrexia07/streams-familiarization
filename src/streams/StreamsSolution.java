@@ -1,7 +1,9 @@
 package streams;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class StreamsSolution {
 
@@ -96,37 +98,47 @@ public class StreamsSolution {
         System.out.println("Output: " + wordLengthList);
         System.out.println();
         /*
+            Given an array of integers, create a stream and print only the even numbers.
 
-
-            Input: List of
+            Input: List of Integers = {12,43,35,26,86,75,99,22,3,5,63,5,77,44}
             Process:
-                Intermediate Operator:
-                Terminal Operator:
-            Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
+                Intermediate Operator: filter(n -> n%2 == 0) → filters all even numbers
+                Terminal Operator: toList()
+            Output: Integer List = {12,26,86,22,44}
          */
-
+        System.out.println("PROBLEM: Given an array of integers, create a stream and print only the even numbers.");
         // Input:
+        List<Integer> randomNumbers = Arrays.asList(12,43,35,26,86,75,99,22,3,5,63,5,77,44);
+        System.out.println("Input: " + randomNumbers);
 
         // Process:
-
+        List<Integer> allEvenNumbers = randomNumbers.stream()
+                                                    .filter(n -> n%2 == 0)
+                                                    .toList();
         // Output:
+        System.out.println("Output: " + allEvenNumbers);
+        System.out.println();
 
         /*
+            Generate the first 10 natural numbers using Stream.iterate() and print them.
 
-
-            Input: List of
+            Input: No need
             Process:
-                Intermediate Operator:
-                Terminal Operator:
-            Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
+                Intermediate Operator: Stream.iterate(1, n -> n+1) → iterate number referencing value '1'.
+                                             limit(10) → limit iteration up to 10 only.
+                Terminal Operator: toList()
+            Output: 10 natural numbers
          */
-
+        System.out.println("PROBLEM: Generate the first 10 natural numbers using Stream.iterate() and print them.");
         // Input:
 
         // Process:
-
+        List<Integer> listOfNaturalNumbers = Stream.iterate(1, n -> n + 1)
+                                                   .limit(10)
+                                                   .toList();
         // Output:
-
+        System.out.println("Output: " + listOfNaturalNumbers);
+        System.out.println();
         /*
 
 

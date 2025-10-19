@@ -6,8 +6,8 @@
 2. Given a list of strings, convert all of them to uppercase using streams. ------ _**Done: 10/17/2025**_
 3. Convert a list of integers to their squares using map. ------ _**Done: 10/18/2025**_
 4. From a list of strings, get the length of each string as a list of integers. ------ _**Done: 10/18/2025**_
-5. Given an array of integers, create a stream and print only the even numbers.
-6. Generate the first 10 natural numbers using Stream.iterate() and print them.
+5. Given an array of integers, create a stream and print only the even numbers. ------ _**Done: 10/19/2025**_
+6. Generate the first 10 natural numbers using Stream.iterate() and print them. ------ _**Done: 10/19/2025**_
 7. Create a stream from a list of names and sort them alphabetically.
 8. Convert a list of words into a single comma-separated string using Collectors.joining().
 9. From a list of names, create a new list where each name starts with a capital letter.
