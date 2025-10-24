@@ -2,7 +2,9 @@ package streams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamsSolution {
@@ -140,37 +142,45 @@ public class StreamsSolution {
         System.out.println("Output: " + listOfNaturalNumbers);
         System.out.println();
         /*
+            Create a stream from a list of names and sort them alphabetically.
 
-
-            Input: List of
+            Input: List of names {"John", "Arthur", "Richard", "Tony", "Barbara", "Nicole"}
             Process:
-                Intermediate Operator:
-                Terminal Operator:
-            Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
+                Intermediate Operator: sorted(Comparator.naturalOrder()) -> to sort names in ascending order
+                Terminal Operator: toList()
+            Output: Integer List = {Arthur, Barbara, John, Nicole, Richard, Tony}
          */
-
+        System.out.println("PROBLEM: Create a stream from a list of names and sort them alphabetically.");
         // Input:
-
+        List<String> randomNames = Arrays.asList("John", "Arthur", "Richard", "Tony", "Barbara", "Nicole");
+        System.out.println("Input: " + randomNames);
         // Process:
-
+        List<String> sortedNames = randomNames.stream()
+                                              .sorted(Comparator.naturalOrder())
+                                              .toList();
         // Output:
-
+        System.out.println("Output: " + sortedNames);
+        System.out.println();
         /*
-
+            Convert a list of words into a single comma-separated string using Collectors.joining().
 
             Input: List of
             Process:
                 Intermediate Operator:
-                Terminal Operator:
+                Terminal Operator: toList(Collectors.joining(",")) → to join all string into 1
             Output: Integer List = {1,2,3,4,5,6,7,8,9,0}
          */
-
+        System.out.println("PROBLEM: Convert a list of words into a single comma-separated " +
+                           "string using Collectors.joining()");
         // Input:
-
+        List<String> listOfWords = Arrays.asList("John", "Arthur", "Richard", "Tony", "Barbara", "Nicole");
+        System.out.println("Input: " + randomNames);
         // Process:
+        String combinedString = listOfWords.stream().collect(Collectors.joining(","));
 
         // Output:
-
+        System.out.println("Output: " + combinedString);
+        System.out.println();
         /*
 
 
